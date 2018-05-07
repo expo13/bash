@@ -1,0 +1,1 @@
+/Users/craigcolquitt/.bash_profile
