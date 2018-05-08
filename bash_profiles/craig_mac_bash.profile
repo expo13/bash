@@ -1,5 +1,5 @@
 ##vim extras
-alias vb='vim ~/.bash_profile && source ~/.bash_profile && cat ~/.bash_profile > ~/repos/expo/bash/bash_profiles/craig_mac_bash.profile'
+alias vb='vim ~/.bash_profile && source ~/.bash_profile && cat ~/.bash_profile > ~/repos/expo/bash/bash_profiles/expo_mac_bash.profile'
 alias vimrc='vim ~/repos/expo/bash/setups/mac_vimrc && cat ~/repos/expo/bash/setups/mac_vimrc > ~/.vimrc'
 
 ##ENVIRONMENT ==========================================
