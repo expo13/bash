@@ -1,0 +1,10 @@
+##These are the brew packages that will be installed (i means ensure installed: u means uninstall if installed)
+i mongodb
+i postgres
+i git
+i gradle
+i groovy
+i python3
+i python
+i postgis
+
