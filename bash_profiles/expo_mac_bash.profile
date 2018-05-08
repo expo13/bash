@@ -39,16 +39,18 @@ alias cdv='cd ~/repos/voyant'
 setupMacInstallScripts(){
 	mkdir -p ~/.setups
 	mkdir -p ~/temp
-	tar -czvf ~/temp/temp.tar.gz ~/repos/expo/bash/setups
-	
+	tar -czvf ~/temp/temp.tar.gz ~/repos/expo/bash/setups	
 }
 
+#Everytime you make a vimrc change it commits to origin develop on github
 gitCommitVimrc(){
+	vim ~/repos/expo/bash/setups/mac.vimrc && cat ~/repos/expo/bash/setups/mac.vimrc > ~/.vimrc
 	git -C ~/repos/expo/bash/setups/ add mac.vimrc
 	git -C ~/repos/expo/bash/setups/ commit -m "Vimrc change"
 	git -C ~/repos/expo/bash/setups/ push origin develop
 }
 
+#Everytime you make a bash_profile change it commits to origin develop on github
 gitCommitBashProfile(){
 	vim ~/repos/expo/bash/bash_profiles/expo_mac_bash.profile && cat ~/repos/expo/bash/bash_profiles/expo_mac_bash.profile > ~/.bash_profile && source ~/.bash_profile
 	git -C ~/repos/expo/bash/bash_profiles add expo_mac_bash.profile
@@ -56,12 +58,14 @@ gitCommitBashProfile(){
 	git -C ~/repos/expo/bash/bash_profiles push origin develop
 }
 
+#Git Add/Commit/Push all to a specified branch
 gitAddAllCommitPush(){
 	git add -A;
 	git commit -m "$1";
 	git push origin $2;
 }
 
+#Git Add One specified file and push to specified branch
 gitAddOneCommitPush(){
 	git add $1;
 	git commit -m "$2";
