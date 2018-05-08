@@ -1,8 +1,17 @@
-" Specify a directory for plugins
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Specify a directory for plugin
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " ========================================================
 " THE FOLLOWING SECTION PROVIDES EXAMPLES ON DIFFERENT WAYS TO GRAB A PLUGIN WITH VIM-PLUG
 " Make sure you use single quotes
@@ -40,13 +49,19 @@ call plug#begin('~/.vim/plugged')
 " INITITALIZE PLUGIN SYSTEM
 call plug#end()
 
+" STANDARD CONFIGS
+set number
+
 " PYTHON CONFIGS
 
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
+au BufNewFile,BufRead *.py,*.php,*.rb,*.html,*.js,*.ts,*.md
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
+    \ set showmatch |
+    \ match BadWhitespace /\s\+$/ |
+    \ set encoding=utf-8

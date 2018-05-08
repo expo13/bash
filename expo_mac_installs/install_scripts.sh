@@ -29,14 +29,12 @@ done < "$1"
 ##VIM =====================================
 
 #Touch vim file
+echo "Touching vimrc file ... "
 touch ~/.vimrc
 
-##Vim Plug
-if [ ! -f ~/.vim/autoload/plug.vim ]
-	echo "Installing vim-plug .... "
-	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-fi
+##Set ~/.vimrc file
+echo "Setting contents of vimrc file from $2"
+cat $2 > ~/.vimrc
 
 echo "Mac install scripts finished running";
 
