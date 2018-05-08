@@ -80,6 +80,12 @@ au BufNewFile,BufRead *.py,*.php,*.rb,*.html,*.js,*.ts,*.md
     \ let python_highlight_all=1 |
     \ syntax on
 
+" JAVA CONFIGS
+au BufNewFile,BufRead *.java
+    \ autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+" GLOBAL GLOBAL GLOBAL CONFIGS ===================================
+
 " Nerd Tree Global
 map <C-n> :NERDTreeToggle<CR>
 
