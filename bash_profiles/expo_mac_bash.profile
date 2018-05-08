@@ -93,4 +93,4 @@ mkdir -p ~/repos/expo
 mkdir -p ~/repos/expo/bash
 
 #oh-my-git
-echo source ~/.oh-my-git/prompt.sh >> ~/.bash_profile
+source ~/.oh-my-git/prompt.sh
