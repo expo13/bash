@@ -26,8 +26,10 @@ while read -r line || [[ -n "$line" ]]; do
 done < "$1"
 
 ##BASH ===================================
-echo "Creating ~/.bash_profile"
 
+#Sets up .bash_profile from the bash_profiles directory
+echo "Creating ~/.bash_profile"
+cat ../profiles/
 
 ##VIM =====================================
 

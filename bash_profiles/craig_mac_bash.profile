@@ -1,6 +1,6 @@
 ##vim extras
 alias vb='vim ~/.bash_profile && source ~/.bash_profile && cat ~/.bash_profile > ~/repos/expo/bash/bash_profiles/craig_mac_bash.profile'
-alias vimrc='vim ~/repos/expo/bash/expo_mac_installs/mac_vimrc && cat ~/repos/expo/bash/expo_mac_installs/mac_vimrc > ~/.vimrc'
+alias vimrc='vim ~/repos/expo/bash/setups/mac_vimrc && cat ~/repos/expo/bash/setups/mac_vimrc > ~/.vimrc'
 
 ##ENVIRONMENT ==========================================
 
@@ -33,9 +33,9 @@ alias cdv='cd ~/repos/voyant'
 ##FUNCTION =================================================
 
 setupMacInstallScripts(){
-	mkdir -p ~/.expo_mac_installs
+	mkdir -p ~/.setups
 	mkdir -p ~/temp
-	tar -czvf ~/temp/temp.tar.gz ~/repos/expo/bash/expo_mac_installs
+	tar -czvf ~/temp/temp.tar.gz ~/repos/expo/bash/setups
 	
 }
 
