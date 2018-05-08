@@ -16,6 +16,7 @@ alias up='cd ..'
 alias l='ls -alh'
 alias x='exit'
 alias up3='cd ../../../'
+alias cde='cd ~/repos/expo/'
 
 ##grep and find searches
 alias g=grepFindFromLocal
