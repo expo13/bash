@@ -78,3 +78,6 @@ au BufNewFile,BufRead *.py,*.php,*.rb,*.html,*.js,*.ts,*.md
 
 " Nerd Tree Global
 map <C-n> :NERDTreeToggle<CR>
+
+" CTAGS
+set tags=tags

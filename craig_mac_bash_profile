@@ -1,7 +1,7 @@
 ##vim extras
 alias vb='vim ~/.bash_profile && source ~/.bash_profile && cat ~/.bash_profile > ~/repos/expo/bash/craig_mac_bash_profile'
 
-##environment setup
+##ENVIRONMENT ==========================================
 
 #This command creates a hidden "executables" dir in user home dir to prevent dev scripts from being accidentally installed
 alias macinstall=setupMacInstallScripts
@@ -22,6 +22,9 @@ alias cde='cd ~/repos/expo/'
 alias g=grepFindFromLocal
 alias ff=findFile
 alias fd=findDir
+
+#CTAGS
+alias tag='ctags -R' #run from directory you want tagged
 
 ##Voyant
 alias cdv='cd ~/repos/voyant'
