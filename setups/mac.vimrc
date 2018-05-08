@@ -1,5 +1,6 @@
 " EXPO VIM CONFIGS FOR MAC .. AND MAYBE LINUX..? 
 
+
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -85,6 +86,7 @@ au BufNewFile,BufRead *.java
 
 " Standard Configs
 set number
+inoremap jj <ESC>
 
 " Nerd Tree Global
 map <C-n> :NERDTreeToggle<CR>

@@ -5,6 +5,7 @@ find . -name '*.py' \
 -o -name '*.cpp' \
 -o -name '*.cc' \
 -o -name '*.hpp'  \
+-o -name '*.h' \
 > cscope.files
 
 # -b: just build
