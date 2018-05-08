@@ -75,3 +75,6 @@ au BufNewFile,BufRead *.py,*.php,*.rb,*.html,*.js,*.ts,*.md
     \ set encoding=utf-8 |
     \ let python_highlight_all=1 |
     \ syntax on
+
+" Nerd Tree Global
+map <C-n> :NERDTreeToggle<CR>
