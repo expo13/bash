@@ -60,9 +60,6 @@ Plug 'artur-shaik/vim-javacomplete2'
 " INITITALIZE PLUGIN SYSTEM
 call plug#end()
 
-" STANDARD CONFIGS
-set number
-
 " PYTHON CONFIGS
 highlight BadWhitespace ctermbg=red guibg=darkre
 
@@ -86,8 +83,14 @@ au BufNewFile,BufRead *.java
 
 " GLOBAL GLOBAL GLOBAL CONFIGS ===================================
 
+" Standard Configs
+set number
+
 " Nerd Tree Global
 map <C-n> :NERDTreeToggle<CR>
+
+"CSCOPE custom map
+nmap <C-@><C-@> :cs find s <C-R>=expand("<cword>")<CR><CR>
 
 " CTAGS
 set tags=tags
