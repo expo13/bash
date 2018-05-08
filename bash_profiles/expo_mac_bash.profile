@@ -1,5 +1,5 @@
 ##vim extras
-alias vb='vim ~/repos/expo/bash/bash_profiles/expo_mac_bash.profile && cat ~/repos/expo/bash/bash_profiles/expo_mac_bash.profile > ~/.bash_profile && source ~/.bash_profile'
+alias vb=gitCommitBashProfile
 alias vimrc='vim ~/repos/expo/bash/setups/mac.vimrc && cat ~/repos/expo/bash/setups/mac.vimrc > ~/.vimrc'
 
 ##ENVIRONMENT ==========================================
@@ -40,6 +40,19 @@ setupMacInstallScripts(){
 	mkdir -p ~/temp
 	tar -czvf ~/temp/temp.tar.gz ~/repos/expo/bash/setups
 	
+}
+
+gitCommitVimrc(){
+	git -C ~/repos/expo/bash/setups/ add mac.vimrc
+	git -C ~/repos/expo/bash/setups/ commit -m "Vimrc change"
+	git -C ~/repos/expo/bash/setups/ push origin develop
+}
+
+gitCommitBashProfile(){
+	vim ~/repos/expo/bash/bash_profiles/expo_mac_bash.profile && cat ~/repos/expo/bash/bash_profiles/expo_mac_bash.profile > ~/.bash_profile && source ~/.bash_profile
+	git -C ~/repos/expo/bash/bash_profiles add expo_mac_bash.profile
+	git -C ~/repos/expo/bash/bash_profiles commit -m "BashProfile change"
+	git -C ~/repos/expo/bash/bash_profiles push origin develop
 }
 
 gitAddAllCommitPush(){
