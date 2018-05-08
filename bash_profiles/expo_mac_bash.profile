@@ -11,6 +11,7 @@ alias macinstall=setupMacInstallScripts
 alias gs='git status'
 alias gita=gitAddAllCommitPush
 alias gits=gitAddOneCommitPush
+alias gb='git branch'
 
 ##terminal navigation
 alias up='cd ..'
