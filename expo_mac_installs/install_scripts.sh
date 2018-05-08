@@ -25,6 +25,9 @@ while read -r line || [[ -n "$line" ]]; do
 		fi
 done < "$1"
 
+##BASH ===================================
+echo "Creating ~/.bash_profile"
+
 
 ##VIM =====================================
 
