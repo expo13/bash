@@ -1,1 +1,55 @@
-/Users/craigcolquitt/.bash_profile
+##vim extras
+alias vb='vim ~/.bash_profile && source ~/.bash_profile'
+
+##git commands
+alias gs='git status'
+alias gita=gitAddAllCommitPush
+alias gits=gitAddOneCommitPush
+
+##terminal navigation
+alias up='cd ..'
+alias l='ls -alh'
+alias x='exit'
+alias up3='cd ../../../'
+
+##grep and find searches
+alias g=grepFindFromLocal
+alias ff=findFile
+alias fd=findDir
+
+##Voyant
+alias cdv='cd ~/repos/voyant'
+
+##FUNCTION =================================================
+
+
+gitAddAllCommitPush(){
+	git add -A;
+	git commit -m "$1";
+	git push origin $2;
+}
+
+gitAddOneCommitPush(){
+	git add $1;
+	git commit -m "$2";
+	git push origin $3;
+}
+
+grepFindFromLocal(){
+	grep -r $1 ./;
+}
+
+findFile(){
+	find ./ -type f -name $1
+}
+
+findDir(){
+	find ./ -type d -name $1
+}
+
+##CLOSING FUNCTIONS
+
+#see vb alias from above. This command make sure the proper directories are in place for VB auto save to git monitored files.
+mkdir -p ~/repos
+mkdir -p ~/repos/expo
+mkdir -p ~/repos/expo/bash
