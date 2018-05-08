@@ -43,4 +43,8 @@ cat $2 > ~/.vimrc
 
 echo "Mac install scripts finished running";
 
+#Oh-my-git
+git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git && echo source ~/.oh-my-git/prompt.sh >> ~/.bash_profile
+
+
 exit 0;
