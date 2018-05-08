@@ -27,6 +27,9 @@ alias fd=findDir
 #CTAGS
 alias tag='ctags -R' #run from directory you want tagged
 
+#CSCOPE
+alias scope='~/repos/expo/bash/tools/cscope_gen.sh'
+
 ##Voyant
 alias cdv='cd ~/repos/voyant'
 
