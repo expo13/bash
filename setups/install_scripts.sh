@@ -29,7 +29,7 @@ done < "$1"
 
 #Sets up .bash_profile from the bash_profiles directory
 echo "Creating ~/.bash_profile"
-cat ~/repos/expo/bash/bash_profiles/expo_mac_bash.profile && source ~/.bash_profile
+cat ~/repos/expo/bash/bash_profiles/expo_mac_bash.profile > ~/.bash_profile && source ~/.bash_profile
 
 ##VIM =====================================
 
