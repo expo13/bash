@@ -60,6 +60,7 @@ call plug#end()
 set number
 
 " PYTHON CONFIGS
+highlight BadWhitespace ctermbg=red guibg=darkre
 
 au BufNewFile,BufRead *.py,*.php,*.rb,*.html,*.js,*.ts,*.md
     \ set tabstop=4 |
@@ -71,7 +72,6 @@ au BufNewFile,BufRead *.py,*.php,*.rb,*.html,*.js,*.ts,*.md
     \ set fileformat=unix |
     \ set showmatch |
     \ match BadWhitespace /\s\+$/ |
-    \ set encoding=utf-8
-
-let python_highlight_all=1
-syntax on
+    \ set encoding=utf-8 |
+    \ let python_highlight_all=1 |
+    \ syntax on
