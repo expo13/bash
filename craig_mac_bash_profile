@@ -2,7 +2,9 @@
 alias vb='vim ~/.bash_profile && source ~/.bash_profile && cat ~/.bash_profile > ~/repos/expo/bash/craig_mac_bash_profile'
 
 ##environment setup
-alias macinstall="~/.expo_mac_installs/install_scripts.sh ~/.expo_mac_installs/brew_inventory"
+
+#This command creates a hidden "executables" dir in user home dir to prevent dev scripts from being accidentally installed
+alias macinstall=setupMacInstallScripts
 
 ##git commands
 alias gs='git status'
@@ -25,6 +27,12 @@ alias cdv='cd ~/repos/voyant'
 
 ##FUNCTION =================================================
 
+setupMacInstallScripts(){
+	mkdir -p ~/.expo_mac_installs
+	mkdir -p ~/temp
+	tar -czvf ~/temp/temp.tar.gz ~/repos/expo/bash/expo_mac_installs
+	
+}
 
 gitAddAllCommitPush(){
 	git add -A;
