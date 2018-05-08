@@ -1,6 +1,8 @@
   
 #These are the default mappings for java autocomplete in vim
 
+Also found here: https://github.com/artur-shaik/vim-javacomplete2
+
   nmap <leader>jI <Plug>(JavaComplete-Imports-AddMissing)
   nmap <leader>jR <Plug>(JavaComplete-Imports-RemoveUnused)
   nmap <leader>ji <Plug>(JavaComplete-Imports-AddSmart)
