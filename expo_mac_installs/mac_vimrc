@@ -19,6 +19,10 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 Plug 'vim-scripts/indentpython.vim'
+
+" JAVA PLUGINS
+Plug 'artur-shaik/vim-javacomplete2'
+
 " ========================================================
 " THE FOLLOWING SECTION PROVIDES EXAMPLES ON DIFFERENT WAYS TO GRAB A PLUGIN WITH VIM-PLUG
 " Make sure you use single quotes
