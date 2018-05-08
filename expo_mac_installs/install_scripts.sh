@@ -25,6 +25,19 @@ while read -r line || [[ -n "$line" ]]; do
 		fi
 done < "$1"
 
+
+##VIM =====================================
+
+#Touch vim file
+touch ~/.vimrc
+
+##Vim Plug
+if [ ! -f ~/.vim/autoload/plug.vim ]
+	echo "Installing vim-plug .... "
+	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+
 echo "Mac install scripts finished running";
 
 exit 0;
