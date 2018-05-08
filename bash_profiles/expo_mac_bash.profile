@@ -1,6 +1,6 @@
 ##vim extras
 alias vb=gitCommitBashProfile
-alias vimrc='vim ~/repos/expo/bash/setups/mac.vimrc && cat ~/repos/expo/bash/setups/mac.vimrc > ~/.vimrc'
+alias vimrc=gitCommitVimrc
 
 ##ENVIRONMENT ==========================================
 
