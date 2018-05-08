@@ -12,6 +12,7 @@ alias gs='git status'
 alias gita=gitAddAllCommitPush
 alias gits=gitAddOneCommitPush
 alias gb='git branch'
+alias gd='git diff *'
 
 ##terminal navigation
 alias up='cd ..'
