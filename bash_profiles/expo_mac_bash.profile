@@ -55,7 +55,7 @@ appendTodos(){
 	str="'$*'"
 	str="$(date) $str"
 	printf "$str" >> ~/notes/todos.txt
-	ptinf '\n\r' >> ~/note/todos.txt
+	printf '\n\r' >> ~/note/todos.txt
 	cat ~/notes/todos.txt
 }
 
