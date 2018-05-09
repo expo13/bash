@@ -63,6 +63,7 @@ appendNotes(){
 	str="'$*'"
 	str="$(date) $str"
 	echo "$str" >> ~/notes/notes.txt
+	echo "" >> ~/notes/notes.txt
 	cat ~/notes/notes.txt
 }
 
