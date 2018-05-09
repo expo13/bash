@@ -26,6 +26,10 @@ alias g=grepFindFromLocal
 alias ff=findFile
 alias fd=findDir
 
+alias todo="echo $1 >> ~/notes/todo"
+alias notes='vim ~/notes/notes.txt'
+alias note="echo $1 >> ~/notes.txt"
+
 #CTAGS
 alias tag='ctags -R' #run from directory you want tagged
 
