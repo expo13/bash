@@ -33,8 +33,9 @@ alias g=grepFindFromLocal
 alias ff=findFile
 alias fd=findDir
 
+#Todos and notes
 alias todo=appendTodos
-#alias todo="touch ~/notes/todos.txt && echo "$(date) $(*)" >> ~/notes/todos.txt && cat ~/notes/todos.txt"
+alias todos='vim ~/notes/todos.txt'
 alias notes='vim ~/notes/notes.txt'
 alias note="touch ~/notes/notes.txt && echo $(date) "'$*'" >> ~/notes/notes.txt"
 
@@ -52,9 +53,17 @@ alias cdv='cd ~/repos/voyant'
 appendTodos(){
 	touch ~/notes/todos.txt
 	str="'$*'"
-	echo "$str"
 	str="$(date) $str"
 	echo "$str" >> ~/notes/todos.txt
+	cat ~/notes/todos.txt
+}
+
+appendNotes(){
+	touch ~/notes/notes.txt
+	str="'$*'"
+	str="$(date) $str"
+	echo "$str" >> ~/notes/notes.txt
+	cat ~/notes/notes.txt
 }
 
 setupMacInstallScripts(){
