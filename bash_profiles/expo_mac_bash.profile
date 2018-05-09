@@ -37,7 +37,7 @@ alias fd=findDir
 alias todo=appendTodos
 alias todos='vim ~/notes/todos.txt'
 alias notes='vim ~/notes/notes.txt'
-alias note="touch ~/notes/notes.txt && echo $(date) "'$*'" >> ~/notes/notes.txt"
+alias note=appendTodos
 
 #CTAGS
 alias tag='ctags -R' #run from directory you want tagged
