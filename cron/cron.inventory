@@ -1,0 +1,1 @@
+* * * * * ~/.cron/daily_cron.sh >> ~/.cron/daily_cron.log 2>&1

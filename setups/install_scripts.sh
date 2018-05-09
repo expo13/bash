@@ -46,6 +46,10 @@ echo "Mac install scripts finished running";
 #Oh-my-git
 git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git 
 
+#setup crons
+mkdir -p ~/.cron
+cat ~/repos/expo/bash/cron/daily_cron.sh > ~/.cron/daily_cron.s
+
 #general directories
 mkdir -p ~/notes
 mkdir -p ~/tools
