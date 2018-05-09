@@ -13,6 +13,8 @@ alias gita=gitAddAllCommitPush
 alias gits=gitAddOneCommitPush
 alias gb='git branch'
 alias gd='git diff *'
+alias gc="git checkout $1"
+alias gm="git merge $1"
 
 ##terminal navigation
 alias up='cd ..'
