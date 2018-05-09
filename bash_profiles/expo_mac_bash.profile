@@ -48,6 +48,11 @@ alias scope='~/repos/expo/bash/tools/cscope_gen.sh'
 ##Voyant
 alias cdv='cd ~/repos/voyant'
 
+##Mongo 
+#This is so mongo doesn't look for /data/db for storage and stores at /usr/local/var/mongodb
+alias mongod="mongod --config /usr/local/etc/mongod.conf --fork"
+
+
 ##FUNCTION =================================================
 
 appendTodos(){
