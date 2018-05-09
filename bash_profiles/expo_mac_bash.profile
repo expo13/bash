@@ -23,6 +23,11 @@ alias x='exit'
 alias up3='cd ../../../'
 alias cde='cd ~/repos/expo/'
 
+
+#pbcopy and pbaste
+alias paste='echo `pbpaste`'
+alias pcopy='cat $1 | pbcopy'
+
 ##grep and find searches
 alias g=grepFindFromLocal
 alias ff=findFile
@@ -30,7 +35,7 @@ alias fd=findDir
 
 alias todo="touch ~/notes/todos.txt && echo $1 >> ~/notes/todos.txt"
 alias notes='vim ~/notes/notes.txt'
-alias note="touch ~/notes/notes.txt && echo $1 >> ~/notes.txt"
+alias note="touch ~/notes/notes.txt && echo $1 >> ~/notes/notes.txt"
 
 #CTAGS
 alias tag='ctags -R' #run from directory you want tagged
