@@ -48,7 +48,8 @@ git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git
 
 #setup crons
 mkdir -p ~/.cron
-cat ~/repos/expo/bash/cron/daily_cron.sh > ~/.cron/daily_cron.s
+cat ~/repos/expo/bash/cron/daily_cron.sh > ~/.cron/daily_cron.sh
+../cron/setup_crons.sh ../cron/cron.inventory
 
 #general directories
 mkdir -p ~/notes
