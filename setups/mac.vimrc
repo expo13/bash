@@ -86,6 +86,8 @@ au BufNewFile,BufRead *.java
 " Standard Configs
 set number
 inoremap jj <ESC>
+map ; :
+noremap ;; ;
 
 " Nerd Tree Global
 map <C-n> :NERDTreeToggle<CR>
