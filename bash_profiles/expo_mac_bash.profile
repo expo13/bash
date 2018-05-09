@@ -34,7 +34,7 @@ alias ff=findFile
 alias fd=findDir
 
 alias todo=appendTodos
-alias todo="touch ~/notes/todos.txt && echo '$(date) $(*)' >> ~/notes/todos.txt && cat ~/notes/todos.txt"
+alias todo="touch ~/notes/todos.txt && echo "$(date) $(*)" >> ~/notes/todos.txt && cat ~/notes/todos.txt"
 alias notes='vim ~/notes/notes.txt'
 alias note="touch ~/notes/notes.txt && echo $(date) "'$*'" >> ~/notes/notes.txt"
 
