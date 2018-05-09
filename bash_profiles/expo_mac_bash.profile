@@ -34,7 +34,7 @@ alias ff=findFile
 alias fd=findDir
 
 alias todo=appendTodos
-alias todo="touch ~/notes/todos.txt && echo "$(date) $(*)" >> ~/notes/todos.txt && cat ~/notes/todos.txt"
+#alias todo="touch ~/notes/todos.txt && echo "$(date) $(*)" >> ~/notes/todos.txt && cat ~/notes/todos.txt"
 alias notes='vim ~/notes/notes.txt'
 alias note="touch ~/notes/notes.txt && echo $(date) "'$*'" >> ~/notes/notes.txt"
 
@@ -48,6 +48,14 @@ alias scope='~/repos/expo/bash/tools/cscope_gen.sh'
 alias cdv='cd ~/repos/voyant'
 
 ##FUNCTION =================================================
+
+appendTodos(){
+	touch ~/notes/todos.txt
+	str="'$*'"
+	echo "$str"
+	str="$(date) $str"
+	echo "$str"
+}
 
 setupMacInstallScripts(){
 	mkdir -p ~/.setups
