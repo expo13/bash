@@ -95,3 +95,6 @@ findDir(){
 mkdir -p ~/repos
 mkdir -p ~/repos/expo
 mkdir -p ~/repos/expo/bash
+
+#oh-my-git
+source ~/.oh-my-git/prompt.sh
