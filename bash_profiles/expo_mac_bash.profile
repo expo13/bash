@@ -54,7 +54,7 @@ appendTodos(){
 	str="'$*'"
 	echo "$str"
 	str="$(date) $str"
-	echo "$str"
+	echo "$str" >> ~/notes/todos.txt
 }
 
 setupMacInstallScripts(){
