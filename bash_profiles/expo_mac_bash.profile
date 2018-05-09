@@ -54,7 +54,7 @@ appendTodos(){
 	touch ~/notes/todos.txt
 	str="'$*'"
 	str="$(date) $str"
-	printf "$str" >> ~/notes/todos.txt
+	echo "$str" >> ~/notes/todos.txt
 	cat ~/notes/todos.txt
 }
 
@@ -62,7 +62,7 @@ appendNotes(){
 	touch ~/notes/notes.txt
 	str="'$*'"
 	str="$(date) $str"
-	printf "$str" >> ~/notes/notes.txt
+	echo "$str" >> ~/notes/notes.txt
 	cat ~/notes/notes.txt
 }
 
