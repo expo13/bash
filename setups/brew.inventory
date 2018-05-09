@@ -10,4 +10,6 @@ i postgis
 i cmake
 i ctags
 i cscope
-a docker
+i docker
+i docker-compose
+i docker-machine
