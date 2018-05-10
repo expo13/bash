@@ -38,6 +38,7 @@ alias todo=appendTodos
 alias todos='vim ~/notes/todos.txt'
 alias notes='vim ~/notes/notes.txt'
 alias note=appendTodos
+alias pws=addToPasswords
 
 #CTAGS
 alias tag='ctags -R' #run from directory you want tagged
@@ -54,6 +55,14 @@ alias mongod="mongod --config /usr/local/etc/mongod.conf --fork"
 
 
 ##FUNCTION =================================================
+
+addToPasswords(){
+	touch ~/notes/xxx
+	str="'$*'"
+	str="$(date) $str"
+	echo "$str" >> ~/notes/xxx
+	cat ~/notes/xxx
+}
 
 appendTodos(){
 	touch ~/notes/todos.txt
