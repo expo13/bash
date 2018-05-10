@@ -60,7 +60,7 @@ addToPasswords(){
 	touch ~/notes/xxx
 	str= echo -n "'$*'" | base64
 	str1="$(date) $str"
-	echo $str
+	echo $str|$str1
 #	echo "$str" >> ~/notes/xxx
 #	cat ~/notes/xxx
 }
