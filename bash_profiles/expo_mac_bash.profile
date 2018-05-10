@@ -117,7 +117,7 @@ gitAddOneCommitPush(){
 }
 
 grepFindFromLocal(){
-	grep -r $1 ./;
+	grep -r -I -n -H $1 ./;
 }
 
 findFile(){
