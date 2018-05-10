@@ -59,7 +59,7 @@ alias mongod="mongod --config /usr/local/etc/mongod.conf --fork"
 addToPasswords(){
 	touch ~/notes/xxx
 	str= echo -n "'$*'" | base64
-#	str="$(date) $str"
+	str1="$(date) $str"
 	echo $str
 #	echo "$str" >> ~/notes/xxx
 #	cat ~/notes/xxx
