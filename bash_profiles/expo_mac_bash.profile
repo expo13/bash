@@ -62,7 +62,7 @@ addToPasswords(){
 	str1="$(date)"
 	echo "$str1|$str"
 	echo "$str1" >> ~/notes/xxx
-	sed '${s/$/"$str/}' file
+	sed '${s/$/"$str"/}' file
 	cat ~/notes/xxx
 }
 
