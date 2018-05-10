@@ -61,7 +61,7 @@ addToPasswords(){
 	str= echo -n "'$*'" | base64
 	str1="$(date)"
 	echo "$str1" >> ~/notes/xxx
-	sed 's/$/"$str"/' ~/notes/xxx
+	sed 's/$/\"$str\"/' ~/notes/xxx
 	cat ~/notes/xxx
 }
 
