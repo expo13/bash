@@ -1,6 +1,7 @@
 #!/bin/sh
 find . -name '*.py' \
 -o -name '*.java' \
+-o -name '*.kt' \
 -o -iname '*.[CH]' \
 -o -name '*.cpp' \
 -o -name '*.cc' \
