@@ -57,11 +57,12 @@ alias mongod="mongod --config /usr/local/etc/mongod.conf --fork"
 ##FUNCTION =================================================
 
 addToPasswords(){
-	touch ~/notes/xxx
+	FILE=~/notex/xxx
+	touch $FILE
 	str= echo -n "'$*'" | base64
 	str1="$(date)"
 	echo "$str1" >> ~/notes/xxx
-	sed 's/$/\"$str\"/' ~/notes/xxx
+	echo "$(cat $FILE)$str" > $FILE
 	cat ~/notes/xxx
 }
 
