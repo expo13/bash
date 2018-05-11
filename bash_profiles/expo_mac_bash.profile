@@ -48,7 +48,7 @@ alias scope='~/repos/expo/bash/tools/cscope_gen.sh'
 
 ##Voyant
 alias cdv='cd ~/repos/voyant'
-alias curlV='curl -H "Cookie:LayeredSession=4a39be59136440849e60fefe8eaaae50aW50ZXJlc3Qdf6dd3408cc74999892166d1efaad4bd" http://localhost:8080/'"$1"''
+alias curlv='curl -H "Cookie:LayeredSession=4a39be59136440849e60fefe8eaaae50aW50ZXJlc3Qdf6dd3408cc74999892166d1efaad4bd" http://localhost:8080/'"$1"''
 
 ##Mongo 
 #This is so mongo doesn't look for /data/db for storage and stores at /usr/local/var/mongodb
