@@ -99,6 +99,7 @@ gitCommitVimrc(){
 	git -C ~/repos/expo/bash/setups/ add mac.vimrc
 	git -C ~/repos/expo/bash/setups/ commit -m "Vimrc change"
 	git -C ~/repos/expo/bash/setups/ push origin develop
+	exit
 }
 
 #Everytime you make a bash_profile change it commits to origin develop on github
