@@ -48,7 +48,7 @@ alias scope='~/repos/expo/bash/tools/cscope_gen.sh'
 
 ##Voyant
 alias cdv='cd ~/repos/voyant'
-alias curlv='curl -v -H "Cookie:LayeredSession=4a39be59136440849e60fefe8eaaae50aW50ZXJlc3Qdf6dd3408cc74999892166d1efaad4bd" http://localhost:8080/'"$1"
+alias curlv=voyantLocalTestCurl
 
 ##Mongo 
 #This is so mongo doesn't look for /data/db for storage and stores at /usr/local/var/mongodb
@@ -57,8 +57,6 @@ alias mongod="mongod --config /usr/local/etc/mongod.conf --fork"
 alias intel='open -a "IntelliJ IDEA.app"'
 
 ##FUNCTION =================================================
-
-alias test=voyantLocalTestCurl
 
 voyantLocalTestCurl(){
 	test='curl -v -H "Cookie:LayeredSession=4a39be59136440849e60fefe8eaaae50aW50ZXJlc3Qdf6dd3408cc74999892166d1efaad4bd" http://localhost:8080/'"$1"''
