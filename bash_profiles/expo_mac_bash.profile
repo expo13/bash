@@ -59,7 +59,7 @@ alias intel='open -a "IntelliJ IDEA.app"'
 ##FUNCTION =================================================
 
 voyantLocalTestCurl(){
-	test='curl -v -H "Cookie:LayeredSession=4a39be59136440849e60fefe8eaaae50aW50ZXJlc3Qdf6dd3408cc74999892166d1efaad4bd" http://localhost:8080/'"$1"''
+	test='curl -v -H "Cookie:LayeredSession='"$1"'" http://localhost:8080/'"$2"''
 	eval $test
 }
 
