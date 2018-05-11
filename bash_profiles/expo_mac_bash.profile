@@ -23,8 +23,7 @@ alias x='exit'
 alias up3='cd ../../../'
 alias cde='cd ~/repos/expo/'
 alias pg='ps -ef | grep $1'
-alias e='exit'
-alias &e=' && e'
+alias andx=' && x'
 
 #pbcopy and pbaste
 alias paste='echo `pbpaste`'
