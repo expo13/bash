@@ -53,6 +53,7 @@ alias cdv='cd ~/repos/voyant'
 #This is so mongo doesn't look for /data/db for storage and stores at /usr/local/var/mongodb
 alias mongod="mongod --config /usr/local/etc/mongod.conf --fork"
 
+alias intel='open -a "IntelliJ IDEA.app"'
 
 ##FUNCTION =================================================
 
