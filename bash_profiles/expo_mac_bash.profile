@@ -1,3 +1,6 @@
+#aws
+ssh -i "~/.ssh/aws-linux-1.pem" ec2-user@ec2-18-191-74-145.us-east-2.compute.amazonaws.com
+
 ##vim extras
 alias vb=gitCommitBashProfile
 alias vimrc=gitCommitVimrc
