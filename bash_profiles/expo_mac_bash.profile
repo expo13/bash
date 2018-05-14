@@ -51,6 +51,9 @@ alias tag='ctags -R' #run from directory you want tagged
 alias scope='~/repos/expo/bash/tools/cscope_gen.sh'
 
 ##Voyant
+alias mongosand='mongo --host db-dal-01.sb.layered.net --port 27017'
+alias mongofeat='mongo --host dockersrv-dal-03.stg.layered.net --port 27017'
+alias mongostage='mongo --host dockersrv-dal-01.stg.layered.net --port 27017'
 alias cdv='cd ~/repos/voyant'
 alias curlv=voyantLocalTestCurl
 
