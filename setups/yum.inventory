@@ -1,0 +1,20 @@
+##These are the yum packages that will be installed (i means ensure installed: u means uninstall if installed)
+#i mongodb
+i postgresql96
+i git
+i nmap
+#i gradle
+i groovy
+i python36
+i python
+i postgis2_93
+i cmake
+i ctags
+i cscope
+i docker
+i docker-compose
+i docker-machine
+#i node
+i httpd
+i ack
+i thefuck
