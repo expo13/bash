@@ -76,8 +76,12 @@ addToPasswords(){
 	cat ~/notes/xxx
 }
 
+#TODO configurize the file locations
 appendTodos(){
-	touch ~/notes/todos.txt
+	if [ ! -f ~/notes/todos.txt ]; then
+		touch ~/notes/todos.txt
+		echo '# [todos]' > ~/notes/todos.txt
+	fi
 	str="'$*'"
 	str="$(date) $str"
 	echo "$str" >> ~/notes/todos.txt
