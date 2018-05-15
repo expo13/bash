@@ -86,6 +86,8 @@ appendTodos(){
 	str="$(date) $str"
 	echo "$str" >> ~/notes/todos.txt
 	cat ~/notes/todos.txt
+	echo " -------- "
+	~/.py/sendTodoListToServer.py
 }
 
 appendNotes(){
