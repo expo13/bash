@@ -7,8 +7,15 @@ alias vimrc=gitCommitVimrc
 
 ##ENVIRONMENT ==========================================
 
+#PATH
+export PATH=$PATH:~/Library/Android/sdk/platform-tools/
+
 #This command creates a hidden "executables" dir in user home dir to prevent dev scripts from being accidentally installed
 alias macinstall=setupMacInstallScripts
+
+##Android commands
+#adb
+alias adbd='adb devices'
 
 ##git commands
 alias gs='git status'
