@@ -58,9 +58,10 @@ alias tag='ctags -R' #run from directory you want tagged
 alias scope='~/repos/expo/bash/tools/cscope_gen.sh'
 
 ##Voyant
-source ~/.voyantmongo
-alias cdv='cd ~/repos/voyant'
-alias curlv=voyantLocalTestCurl
+if [ -f ~/.voyantmongo ]; then
+	source ~/.voyantmongo
+	sourece ~/.voyant_profile    
+fi
 
 ##Mongo 
 #This is so mongo doesn't look for /data/db for storage and stores at /usr/local/var/mongodb
@@ -69,11 +70,6 @@ alias mongod="mongod --config /usr/local/etc/mongod.conf --fork"
 alias intel='open -a "IntelliJ IDEA.app"'
 
 ##FUNCTION =================================================
-
-voyantLocalTestCurl(){
-	test='curl -v -H "Cookie:LayeredSession='"$1"'" http://localhost:8080/'"$2"''
-	eval $test
-}
 
 addToPasswords(){
 	touch ~/notes/xxx
