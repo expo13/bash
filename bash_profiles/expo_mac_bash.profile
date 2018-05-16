@@ -124,7 +124,7 @@ gitCommitBashProfile(){
 	git -C ~/repos/expo/bash/bash_profiles add expo_mac_bash.profile
 	git -C ~/repos/expo/bash/bash_profiles commit -m "BashProfile change"
 	git -C ~/repos/expo/bash/bash_profiles push origin develop
-	exit
+#	exit
 }
 
 #Git Add/Commit/Push all to a specified branch
