@@ -62,7 +62,7 @@ alias scope='~/repos/expo/bash/tools/cscope_gen.sh'
 ##Voyant
 if [ -f ~/.voyantmongo ]; then
 	source ~/.voyantmongo
-	sourece ~/.voyant_profile    
+	source ~/.voyant_profile    
 fi
 
 ##Mongo 
