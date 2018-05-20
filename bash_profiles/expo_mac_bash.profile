@@ -10,7 +10,7 @@ alias vimrc=gitCommitVimrc
 ##ENVIRONMENT ==========================================
 
 #PATH
-export PATH=$PATH:~/tool/platform-tools/
+export PATH=$PATH:~/tools/platform-tools/
 
 #This command creates a hidden "executables" dir in user home dir to prevent dev scripts from being accidentally installed
 alias macinstall=setupMacInstallScripts
