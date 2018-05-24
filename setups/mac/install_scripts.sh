@@ -2,6 +2,14 @@
 
 ##Here's is where install scripts or pointers to install scripts should be place.
 
+#
+#
+#TODO WE MUST ADD THE CONFIG FILE CHECK HERE AND SET CONFIGS
+#
+#
+
+
+
 ##ensure brew is installed
 if [ ! -f /usr/local/bin/brew ]; then
     	echo "Brew not found here: /usr/local/bin/brew .. installing brew!"

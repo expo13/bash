@@ -2,34 +2,32 @@
 
 ##Here's is where install scripts or pointers to install scripts should be place.
 
-##ensure brew is installed
-if [ ! -f /usr/local/bin/brew ]; then
-    	echo "Brew not found here: /usr/local/bin/brew .. installing brew!"
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
+##check input arguments
+
+
+##ensure recent yum is installed
 
 ##Run through Brew Installs
-brew update
 while read -r line || [[ -n "$line" ]]; do
 	if [[ "${line:0:1}" = *"#"* ]]; then
 		continue
 	fi
-	echo "Line from Brew inventory file is: $line"
+	echo "Line from yum inventory file is: $line"
 		a=( $line )
 		if [[ ${a[0]} = *"i"* ]]; then
-			echo "Brew installing ${a[1]}"
-			brew install ${a[1]}
+			echo "Yum installing ${a[1]}"
+			yum install ${a[1]}
 		elif [[ ${a[0]} = *"u"* ]]; then
-			echo "Brew UNinstalling ${a[1]}"
-			brew uninstall ${a[1]}
+			echo "Yum UNinstalling ${a[1]}"
+			yum uninstall ${a[1]}
 		fi
 done < "$1"
 
 ##BASH ===================================
 
 #Sets up .bash_profile from the bash_profiles directory
-echo "Creating ~/.bash_profile"
-cat ~/repos/expo/bash/bash_profiles/expo_mac_bash.profile > ~/.bash_profile && source ~/.bash_profile
+echo "Creating ~/.bashrc"
+cat ../profiles/linux/expo_linux_bash.profile > ~/.bashrc && source ~/.bashrc
 
 ##VIM =====================================
 
@@ -41,7 +39,7 @@ touch ~/.vimrc
 echo "Setting contents of vimrc file from $2"
 cat $2 > ~/.vimrc
 
-echo "Mac install scripts finished running";
+echo "Linux install scripts finished running";
 
 #Oh-my-git
 git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git 

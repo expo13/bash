@@ -1,0 +1,9 @@
+The linux setup script needs some work.
+
+1. Setting up root user bashrc, vimrc, etc.
+2. Installing GIT
+3. Parameterized location files
+4. etc root crons
+5. Apache setup/config
+6. SSL certs, etc.
+7. Grab certain blocks in the setup sceript based on yaml configuratoin
