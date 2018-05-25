@@ -59,6 +59,9 @@ alias tag='ctags -R' #run from directory you want tagged
 #CSCOPE
 alias scope='~/repos/expo/bash/tools/cscope_gen.sh'
 
+##Applications
+alias startall=startAllImportanApplications
+
 ##Voyant
 if [ -f ~/.voyantmongo ]; then
 	source ~/.voyantmongo
@@ -72,6 +75,13 @@ alias mongod="mongod --config /usr/local/etc/mongod.conf --fork"
 alias intel='open -a "IntelliJ IDEA.app"'
 
 ##FUNCTION =================================================
+
+startAllImportanApplications(){
+	open -a "IntelliJ IDEA.app"
+	open -a "Sourcetree.app"
+	open -a "Google Chrome.app"
+	open -a "Slack.app"
+}
 
 addToPasswords(){
 	touch ~/notes/xxx
