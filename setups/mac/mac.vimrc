@@ -17,6 +17,7 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'scrooloose/nerdcommenter'
 
 " PYTHON PLUGINS (also for other)
+Plug 'davidhalter/jedi-vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 Plug 'vim-scripts/indentpython.vim'
@@ -103,6 +104,7 @@ set number
 inoremap jj <ESC>
 map ; :
 noremap ;; ;
+set tags=tags;/
 
 " Nerd Tree Global
 map <C-n> :NERDTreeToggle<CR>
