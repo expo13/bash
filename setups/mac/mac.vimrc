@@ -14,6 +14,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'junegunn/vim-easy-align'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+Plug 'scrooloose/nerdcommenter'
 
 " PYTHON PLUGINS (also for other)
 Plug 'vim-syntastic/syntastic'
@@ -79,7 +80,21 @@ au BufNewFile,BufRead *.py,*.php,*.rb,*.html,*.js,*.ts,*.md
 
 " JAVA CONFIGS
 au BufNewFile,BufRead *.java
-    \ autocmd FileType java setlocal omnifunc=javacomplete#Complete
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+nmap <F5> <Plug>(JavaComplete-Imports-Add)
+imap <F5> <Plug>(JavaComplete-Imports-Add)
+nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+
+" TODO - this website for more vim-javacomplete2 configs
+" https://github.com/artur-shaik/vim-javacomplete2
+
+
 
 " GLOBAL GLOBAL GLOBAL CONFIGS ===================================
 
