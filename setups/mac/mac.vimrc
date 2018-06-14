@@ -107,7 +107,7 @@ noremap ;; ;
 set tags=tags;/
 
 " Nerd Tree Global
-map <C-n> :NERDTreeToggle<CR>
+map :n :NERDTreeToggle<CR>
 
 "CSCOPE custom map
 nmap <C-@><C-@> :cs find s <C-R>=expand("<cword>")<CR><CR>
