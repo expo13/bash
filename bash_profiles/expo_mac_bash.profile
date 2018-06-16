@@ -50,8 +50,10 @@ alias fd=findDir
 alias todo=appendTodos
 alias todos='vim ~/notes/todos.txt'
 alias notes='vim ~/notes/notes.txt'
-alias note=appendTodos
+alias note=appendNotes
 alias pws=addToPasswords
+alias run=appendToRun #Did you run yesterday?
+alias sleep=appendToSleep #Did you sleep?
 
 #CTAGS
 alias tag='ctags -R' #run from directory you want tagged
@@ -103,6 +105,23 @@ appendTodos(){
 	cat ~/notes/todos.txt
 	echo " -------- "
 	~/.py/sendTodoListToServer.py
+}
+
+appendToRun() {
+	touch ~/notes/run.log
+	str="'$*'"
+	str="$(date) $str"
+	echo "$str" >> ~/notes/run.log
+	cat ~/notes/run.log
+}
+
+
+appendToSleep() {
+	touch ~/notes/sleep.log
+	str="'$*'"
+	str="$(date) $str"
+	echo "$str" >> ~/notes/sleep.log
+	cat ~/notes/sleep.log
 }
 
 appendNotes(){
