@@ -62,5 +62,8 @@ cat ~/repos/expo/bash/cron/daily_cron.sh > ~/.cron/daily_cron.sh
 #general directories
 mkdir -p ~/notes
 mkdir -p ~/tools
+mkdir -p ~/packages
+mkdir -p ~/sandbox
+
 
 exit 0;
