@@ -65,5 +65,12 @@ mkdir -p ~/tools
 mkdir -p ~/packages
 mkdir -p ~/sandbox
 
+#Google Cloud Platform
+curl -o ~/packages/google-cloud-sdk-221.0.0-darwin-x86_64.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-220.0.0-darwin-x86_64.tar.gz
+cd ~/packages
+tar -xzvf google-cloud-sdk-220.0.0-darwin-x86_64.tar.gz
+./google-cloud-sdk/install.sh
+./google-cloud-sdk/bin/gcloud init
+
 
 exit 0;
