@@ -203,4 +203,4 @@ if [ -f '/Users/ccolquitt/packages/google-cloud-sdk/completion.bash.inc' ]; then
 
 #Docker
 #start daemon on mac
-alias dock='nohup ./Docker &'
+alias dock='nohup /Applications/Docker.app/Contents/MacOS/Docker  /Applications/Docker.app/Contents/MacOS/ &'
