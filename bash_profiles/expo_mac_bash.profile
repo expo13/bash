@@ -200,3 +200,7 @@ if [ -f '/Users/ccolquitt/packages/google-cloud-sdk/path.bash.inc' ]; then . '/U
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ccolquitt/packages/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/ccolquitt/packages/google-cloud-sdk/completion.bash.inc'; fi
+
+#Docker
+#start daemon on mac
+alias dock='nohup ./Docker &'
