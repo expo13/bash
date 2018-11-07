@@ -204,3 +204,6 @@ if [ -f '/Users/ccolquitt/packages/google-cloud-sdk/completion.bash.inc' ]; then
 #Docker
 #start daemon on mac
 alias dock='nohup /Applications/Docker.app/Contents/MacOS/Docker  /Applications/Docker.app/Contents/MacOS/ &'
+
+#JULIA
+export PATH=$PATH:/Applications/Julia-1.0.app/Contents/Resources/julia/bin
