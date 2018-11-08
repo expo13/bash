@@ -1,4 +1,5 @@
 " EXPO VIM CONFIGS FOR MAC .. AND MAYBE LINUX..? 
+" Add to 'Plug' lines for plugin tool to grab plugins
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -24,6 +25,12 @@ Plug 'vim-scripts/indentpython.vim'
 
 " JAVA PLUGINS
 Plug 'artur-shaik/vim-javacomplete2'
+			
+" Julia
+Plug 'https://github.com/JuliaEditorSupport/julia-vim'
+
+" Go
+Plug 'https://github.com/fatih/vim-go'
 
 " ========================================================
 " THE FOLLOWING SECTION PROVIDES EXAMPLES ON DIFFERENT WAYS TO GRAB A PLUGIN WITH VIM-PLUG
