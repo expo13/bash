@@ -207,3 +207,7 @@ alias dock='nohup /Applications/Docker.app/Contents/MacOS/Docker  /Applications/
 
 #JULIA
 export PATH=$PATH:/Applications/Julia-1.0.app/Contents/Resources/julia/bin
+
+#k8s
+alias kns='kubectl get namespaces'
+alias kgp='kubectl get pods'
