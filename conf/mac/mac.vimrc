@@ -122,4 +122,5 @@ nmap <C-@><C-@> :cs find s <C-R>=expand("<cword>")<CR><CR>
 " CTAGS
 set tags=tags
 
-
+" IGNORE ERRORS ON VIM LAUNCH
+let g:go_version_warning = 0
