@@ -145,7 +145,7 @@ gitCommitVimrc(){
 	vim ~/repos/expo/bash/conf/mac/mac.vimrc && cat ~/repos/expo/bash/conf/mac/mac.vimrc > ~/.vimrc
 	git -C ~/repos/expo/bash/conf/mac/ add mac.vimrc
 	git -C ~/repos/expo/bash/conf/mac/ commit -m "Vimrc change"
-	git -C ~/repos/expo/bash/conf/mac push origin master
+	git -C ~/repos/expo/bash/conf/mac/ push origin master
 	exit
 }
 
