@@ -142,10 +142,10 @@ setupMacInstallScripts(){
 
 #Everytime you make a vimrc change it commits to origin develop on github
 gitCommitVimrc(){
-	vim ~/repos/expo/bash/setups/mac.vimrc && cat ~/repos/expo/bash/setups/mac.vimrc > ~/.vimrc
-	git -C ~/repos/expo/bash/setups/ add mac.vimrc
-	git -C ~/repos/expo/bash/setups/ commit -m "Vimrc change"
-	git -C ~/repos/expo/bash/setups/ push origin develop
+	vim ~/repos/expo/bash/conf/mac/mac.vimrc && cat ~/repos/expo/bash/conf/mac/mac.vimrc > ~/.vimrc
+	git -C ~/repos/expo/bash/conf/mac/ add mac.vimrc
+	git -C ~/repos/expo/bash/conf/mac/ commit -m "Vimrc change"
+	git -C ~/repos/expo/bash/conf/mac push origin master
 	exit
 }
 
@@ -154,7 +154,7 @@ gitCommitBashProfile(){
 	vim ~/repos/expo/bash/bash_profiles/expo_mac_bash.profile && cat ~/repos/expo/bash/bash_profiles/expo_mac_bash.profile > ~/.bash_profile && source ~/.bash_profile
 	git -C ~/repos/expo/bash/bash_profiles add expo_mac_bash.profile
 	git -C ~/repos/expo/bash/bash_profiles commit -m "BashProfile change"
-	git -C ~/repos/expo/bash/bash_profiles push origin develop
+	git -C ~/repos/expo/bash/bash_profiles push origin master
 #	exit
 }
 
