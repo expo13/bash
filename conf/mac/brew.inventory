@@ -3,7 +3,6 @@ i mongodb
 i postgres
 i git
 i gradle
-i groovy
 i python3
 i python
 i postgis
@@ -22,3 +21,4 @@ i hadoop
 i sqlite
 i nmap
 i kubernetes-cli
+i telnet

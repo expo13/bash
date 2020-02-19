@@ -1,9 +1,15 @@
 #!/bin/bash
 
-##Here's is where install scripts or pointers to install scripts should be place.
-##Only 1 argument should be supplied - the config file 
+##This is a basic shell setup script for mac computers. Inputs should be bash_profile and vimrc
+## TODO - configurize and abstract these blocks so that a single conf file can be input and those
+## key:value pairs are used to point to the conf file of the block's requirements. Ie. 
+## Brew block example:
+## if [ "$input" = "brew" ]; then
+##    `install brew command`
+##    `loop through config file to install each package afterwards`
+## fi
 
-#============= TODO figure out if you can return a sgring value here
+#####TEMPORARY WORK BLOCK
 function getConfig {
 
 while read -r line || [[ -n "$line" ]]; do
@@ -11,29 +17,29 @@ while read -r line || [[ -n "$line" ]]; do
 		continue
 	fi
 	echo "Line from config file is: $line"
-		param=`echo $line | cut -d':' -f 1`
-		if [ $param = $2 ]; then
-			value=`echo $line | cut -d':' -f 2`
-			echo "Setting config $param to value $value"
-			return "$value"
-		f
+	param=`echo $line | cut -d':' -f 1`
+	if [ $param = $2 ]; then
+		value=`echo $line | cut -d':' -f 2`
+		echo "Setting config $param to value $value"
+		return "$value"
+	fi
+
 done < "$1" #this is the file
-echo "No value found for config $2"
 exit 1
 }
 
 ANOTHERVALUE=`getConfig $1 $2`
-echo "here"
+echo "done!"
 exit 0
 #==============
 
-
-##input config file - only
+##check that there is at least one argument. 
 if [ -z "$1" ]; then
     echo "No arguments homie!  Please list config file in arguments for setup: config file, bash profile, vimrc."
 fi
-if [ ! -f "$1" || ! -f "$2" || ! -f "$3" ]; then
-    echo "Argument not found. Arguments are: config file, bash profile, vimrc"
+##check that those files exist
+if [ ! -f "$1" || ! -f "$2" ]; then
+    echo "Argument not found. Arguments are: brew packages file, vimrc config file"
     exit 1;
 fi
 
@@ -121,6 +127,5 @@ while read -r line || [[ -n "$line" ]]; do
 done < "$1" #this is the file
 }
 
-echo "Don't forget to install thunderbird email client by mozilla"
 
 exit 0

@@ -67,10 +67,9 @@ alias scope='~/repos/expo/bash/tools/cscope_gen.sh'
 ##Applications
 alias startall=startAllImportanApplications
 
-##Voyant
-if [ -f ~/.voyantmongo ]; then
-	source ~/.voyantmongo
-	source ~/.voyant_profile    
+##VERIZON
+if [ -f ~/.verizon_profile ]; then
+	source ~/.verizon_profile    
 fi
 
 ##Mongo 
