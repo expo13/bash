@@ -192,7 +192,7 @@ mkdir -p ~/repos/expo
 mkdir -p ~/repos/expo/bash
 
 #oh-my-git
-source ~/.oh-my-git/prompt.sh
+#source ~/.oh-my-git/prompt.sh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/ccolquitt/packages/google-cloud-sdk/path.bash.inc' ]; then . '/Users/ccolquitt/packages/google-cloud-sdk/path.bash.inc'; fi
