@@ -76,7 +76,9 @@ fi
 #This is so mongo doesn't look for /data/db for storage and stores at /usr/local/var/mongodb
 alias mongod="mongod --config /usr/local/etc/mongod.conf --fork"
 
+#Dev Apps
 alias intel='open -a "IntelliJ IDEA.app"'
+alias intel='open -a "Atom.app"'
 
 ##FUNCTION =================================================
 
