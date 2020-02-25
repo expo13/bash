@@ -1,4 +1,5 @@
 ##These are the brew packages that will be installed (i means ensure installed: u means uninstall if installed)
+i bash
 i mongodb
 i postgres
 i adoptopenjdk
