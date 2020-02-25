@@ -20,7 +20,7 @@ brew
 bash
 directories
 vim
-oh-my-git
+oh-my-bash
 crons
 local-email
 gcp
