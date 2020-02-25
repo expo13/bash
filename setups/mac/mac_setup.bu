@@ -82,9 +82,6 @@ touch ~/.vimrc
 echo "Setting contents of vimrc file from $3"
 cat $3 > ~/.vimrc
 
-#Oh-my-git
-git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git 
-
 #setup crons
 mkdir -p ~/.cron
 cat ~/repos/expo/bash/cron/daily_cron.sh > ~/.cron/daily_cron.sh

@@ -16,12 +16,12 @@ function runConfig {
 	if [ "$1" = "brew" ]; then
 		echo "Running install of Brew from setup script..."
 		sh ./brew_install.sh $2
-	elif [ "$1" = "oh-my-git" ]; then
-                echo "Running setup of oh-my-git from setup script..."
-                sh ./oh-my-git $2
 	elif [ "$1" = "bash" ]; then
                 echo "Running setup of bash profile from setup script..."
                 sh ./bash_setup.sh $2
+	elif [ "$1" = "oh-my-bash" ]; then 
+                echo "Running setup of oh-my-bash from setup script..."
+                sh ./oh-my-bash $2
 	elif [ "$1" = "directories" ]; then
                 echo "Running setup of custom directories from setup script..."
                 sh ./directories_setup.sh $2
