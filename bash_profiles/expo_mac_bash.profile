@@ -202,9 +202,6 @@ if [ -f '/Users/ccolquitt/packages/google-cloud-sdk/path.bash.inc' ]; then . '/U
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ccolquitt/packages/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/ccolquitt/packages/google-cloud-sdk/completion.bash.inc'; fi
 
-#Postgres
-export PGDATA=/usr/local/var/postgresql@9.6
-
 #Docker
 #start daemon on mac
 alias dock='nohup /Applications/Docker.app/Contents/MacOS/Docker  /Applications/Docker.app/Contents/MacOS/ &'
