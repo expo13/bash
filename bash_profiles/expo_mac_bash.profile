@@ -203,7 +203,7 @@ if [ -f '/Users/ccolquitt/packages/google-cloud-sdk/path.bash.inc' ]; then . '/U
 if [ -f '/Users/ccolquitt/packages/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/ccolquitt/packages/google-cloud-sdk/completion.bash.inc'; fi
 
 #Postgres
-export PGDATA=~/data/pgdata
+export PGDATA=/usr/local/var/postgresql@9.6
 
 #Docker
 #start daemon on mac
