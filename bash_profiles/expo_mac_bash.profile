@@ -215,6 +215,9 @@ alias kns='kubectl get namespaces'
 alias kgp='kubectl get pods'
 alias ktl='kubectl $1'
 
+#the fuck
+eval $(thefuck --alias)
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
