@@ -25,3 +25,4 @@ i nmap
 i kubernetes-cli
 i telnet
 i anaconda
+i tmux
