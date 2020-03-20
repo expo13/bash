@@ -219,8 +219,8 @@ alias ktl='kubectl $1'
 #the fuck
 eval $(thefuck --alias)
 
-##conda 
-alias pycv='conda activate py36'
+#redis
+alias redis='redis-server --daemonize yes'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
