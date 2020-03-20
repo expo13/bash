@@ -26,3 +26,5 @@ i kubernetes-cli
 i telnet
 i anaconda
 i tmux
+i jq
+i awscli
