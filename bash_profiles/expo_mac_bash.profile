@@ -83,7 +83,7 @@ alias mongod="mongod --config /usr/local/etc/mongod.conf --fork"
 
 #Dev Apps
 alias intel='open -a "IntelliJ IDEA.app"'
-alias intel='open -a "Atom.app"'
+alias atom='open -a "Atom.app"'
 
 ##FUNCTION =================================================
 
