@@ -194,8 +194,6 @@ findDir(){
 ##CLOSING FUNCTIONS
 
 #see vb alias from above. This command make sure the proper directories are in place for VB auto save to git monitored files.
-mkdir -p ~/repos
-mkdir -p ~/repos/expo
 mkdir -p ~/repos/expo/bash
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -210,6 +208,9 @@ alias dock='nohup /Applications/Docker.app/Contents/MacOS/Docker  /Applications/
 
 #JULIA
 export PATH=$PATH:/Applications/Julia-1.0.app/Contents/Resources/julia/bin
+
+#Jupyter
+alias jn='jupyter notebook'
 
 #k8s
 alias kns='kubectl get namespaces'
