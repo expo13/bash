@@ -220,6 +220,10 @@ alias ktl='kubectl $1'
 #the fuck
 eval $(thefuck --alias)
 
+#Docker
+alias dr='docker rm $1'
+alias da='docker ps -a'
+
 #redis
 alias redis='redis-server --daemonize yes'
 
