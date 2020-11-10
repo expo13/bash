@@ -221,7 +221,7 @@ alias ktl='kubectl $1'
 eval $(thefuck --alias)
 
 #scala - fuck scala
-export SCALA_HOME="/Users/craig/tools/scala-2.12.8
+export SCALA_HOME="$HOME/tools/scala-2.12.8"
 export PATH=$PATH:$SCALA_HOME/bin
 
 #Docker
