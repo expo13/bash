@@ -1,12 +1,10 @@
 ##MAC PROFILE - EXPO
 
-##Do this first that way aliases don't get written over.
+echo 'Copy Gold Leader!'
+
 source ~/.bashrc
-
-echo 'Copy Gold Leader!!'
-
 #java
-#export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home"
 
 #aws
 alias awssh='ssh -i "~/.ssh/aws-linux-1.pem" ec2-user@ec2-18-191-74-145.us-east-2.compute.amazonaws.com'
@@ -83,7 +81,7 @@ alias mongod="mongod --config /usr/local/etc/mongod.conf --fork"
 
 #Dev Apps
 alias intel='open -a "IntelliJ IDEA.app"'
-alias atom='open -a "Atom.app"'
+alias intel='open -a "Atom.app"'
 
 ##FUNCTION =================================================
 
@@ -194,7 +192,12 @@ findDir(){
 ##CLOSING FUNCTIONS
 
 #see vb alias from above. This command make sure the proper directories are in place for VB auto save to git monitored files.
+mkdir -p ~/repos
+mkdir -p ~/repos/expo
 mkdir -p ~/repos/expo/bash
+
+#oh-my-git
+#source ~/.oh-my-git/prompt.sh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/ccolquitt/packages/google-cloud-sdk/path.bash.inc' ]; then . '/Users/ccolquitt/packages/google-cloud-sdk/path.bash.inc'; fi
@@ -209,27 +212,10 @@ alias dock='nohup /Applications/Docker.app/Contents/MacOS/Docker  /Applications/
 #JULIA
 export PATH=$PATH:/Applications/Julia-1.0.app/Contents/Resources/julia/bin
 
-#Jupyter
-alias jn='jupyter notebook'
-
 #k8s
 alias kns='kubectl get namespaces'
 alias kgp='kubectl get pods'
 alias ktl='kubectl $1'
-
-#the fuck
-eval $(thefuck --alias)
-
-#scala - fuck scala
-export SCALA_HOME=$HOME/tools/scala-2.12.8
-export PATH=$PATH:$SCALA_HOME/bin
-
-#Docker
-alias dr='docker rm $1'
-alias da='docker ps -a'
-
-#redis
-alias redis='redis-server --daemonize yes'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -245,3 +231,19 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+export SSH_AUTH_SOCK=/Users/craig/.yubiagent/sock
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
+
+export SSH_AUTH_SOCK=/Users/craig/.yubiagent/sock
+
+export SSH_AUTH_SOCK=/Users/craig/.yubiagent/sock
