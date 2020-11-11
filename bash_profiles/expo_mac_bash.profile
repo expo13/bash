@@ -241,9 +241,9 @@ export PATH
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
+export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 
 export SSH_AUTH_SOCK=/Users/craig/.yubiagent/sock
 
-export SSH_AUTH_SOCK=/Users/craig/.yubiagent/sock
+export SCALA_HOME="${HOME}/tools/scala-2.12.8"
+export PATH=$PATH:$SCALA_HOME/bin
