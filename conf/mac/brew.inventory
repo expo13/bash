@@ -28,3 +28,6 @@ i anaconda
 i tmux
 i jq
 i awscli
+i ansible
+i gdb
+
