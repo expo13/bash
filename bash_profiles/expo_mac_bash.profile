@@ -232,9 +232,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-
 export SSH_AUTH_SOCK=/Users/craig/.yubiagent/sock
 
