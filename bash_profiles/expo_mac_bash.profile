@@ -52,55 +52,19 @@ alias g=grepFindFromLocal
 alias ff=findFile
 alias fd=findDir
 
-#Todos and notes
-alias todo=appendTodos
-alias todos='vim ~/notes/todos.txt'
-alias notes='vim ~/notes/notes.txt'
-alias note=appendNotes
-alias pws=addToPasswords
-alias run=appendToRun #Did you run yesterday?
-alias sleep=appendToSleep #Did you sleep?
-
 #CTAGS
 alias tag='ctags -R' #run from directory you want tagged
 
 #CSCOPE
 alias scope='~/repos/expo/bash/tools/cscope_gen.sh'
 
-##Applications
-alias startall=startAllImportanApplications
 
 ##VERIZON
 if [ -f ~/.verizon_profile ]; then
 	source ~/.verizon_profile    
 fi
 
-##Mongo 
-#This is so mongo doesn't look for /data/db for storage and stores at /usr/local/var/mongodb
-alias mongod="mongod --config /usr/local/etc/mongod.conf --fork"
-
-#Dev Apps
-alias intel='open -a "IntelliJ IDEA.app"'
-alias intel='open -a "Atom.app"'
-
-##FUNCTION =================================================
-
-startAllImportanApplications(){
-	open -a "IntelliJ IDEA.app"
-	open -a "Sourcetree.app"
-	open -a "Google Chrome.app"
-	open -a "Slack.app"
-}
-
-addToPasswords(){
-	touch ~/notes/xxx
-	str="'$*'"
-	str="$(date) $str"
-	echo "$str" >> ~/notes/xxx
-	cat ~/notes/xxx
-}
-
-#TODO configurize the file locations
+#Maybe we can use this again? I like the idea.
 appendTodos(){
 	if [ ! -f ~/notes/todos.txt ]; then
 		touch ~/notes/todos.txt
@@ -120,15 +84,6 @@ appendToRun() {
 	str="$(date) $str"
 	echo "$str" >> ~/notes/run.log
 	cat ~/notes/run.log
-}
-
-
-appendToSleep() {
-	touch ~/notes/sleep.log
-	str="'$*'"
-	str="$(date) $str"
-	echo "$str" >> ~/notes/sleep.log
-	cat ~/notes/sleep.log
 }
 
 appendNotes(){
@@ -195,9 +150,6 @@ findDir(){
 mkdir -p ~/repos
 mkdir -p ~/repos/expo
 mkdir -p ~/repos/expo/bash
-
-#oh-my-git
-#source ~/.oh-my-git/prompt.sh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/ccolquitt/packages/google-cloud-sdk/path.bash.inc' ]; then . '/Users/ccolquitt/packages/google-cloud-sdk/path.bash.inc'; fi
