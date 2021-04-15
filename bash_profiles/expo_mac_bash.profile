@@ -161,7 +161,9 @@ alias dock='nohup /Applications/Docker.app/Contents/MacOS/Docker  /Applications/
 alias de='docker exec -it $1 /bin/bash'
 alias dr='docker run -it --rm'
 alias db='docker build . -t'
-
+alias di='docker images'
+alias d='docker'
+alias ds='docker ps -a'
 
 #JULIA
 export PATH=$PATH:/Applications/Julia-1.0.app/Contents/Resources/julia/bin
